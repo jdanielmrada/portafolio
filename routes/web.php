@@ -11,14 +11,8 @@
 |
 */
 
-Route::get('/', function () {
 
-	$portafolios= App\Article::orderBy('id','DESC')->paginate(6);
-	$portafolios->each(function($portafolios){
-            $portafolios->images;
-           });
-    return view('welcome')->with('portafolios',$portafolios);
-});
+Route::get('/', 'InicioController@index')->name('inicio');
 
 Auth::routes();
 
