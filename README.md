@@ -1,2 +1,2 @@
-# portaforio
-Practicas y proyectos
+Portafolio
+Pracicas y Proyectos
